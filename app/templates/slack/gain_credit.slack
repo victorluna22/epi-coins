@@ -1,0 +1,13 @@
+{% extends django_slack %}
+
+{% block text %}
+Opa! *{{ obj.user.get_short_name }}* ganhou *£pi{{ obj.value }}*. E possui a fortuna de *£pi{{ obj.user.bank_balance }}*.
+{% endblock %}
+
+{% block channel %}
+#epicoins
+{% endblock %}
+
+{% block token %}
+xoxp-3137943408-4353846441-10503856070-249da453db
+{% endblock token %}
